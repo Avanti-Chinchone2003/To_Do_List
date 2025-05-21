@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--Navigation Bar-->
+     <div class="navbar">
+    <h2>📝 ToDo App</h2>
+    <button id="themeToggle">🌙</button>
+</div>
+
+    <!--Container-->
+    <div class="container">
+        <div class="stat_container">
+            <div class="details">
+                <h1>ADD TASKS </h1>
+                <p>Keep it up!</p>
+                <div id="ProgressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stat_num">
+                <p id="numbers">0/0</p>
+            </div>
+        </div>
+        
+        <!-- Form -->
+       <form action=" " method="post">
+    <input type="text" id="taskInput" placeholder="Write Your Task" />
+    <select id="priorityInput" aria-label="Task priority">
+        <option value="low" selected>Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select>
+    <button id="newTask" type="submit">+</button>
+</form>
+
+        <!-- Task List -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
