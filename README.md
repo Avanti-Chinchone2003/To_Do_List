@@ -44,10 +44,10 @@ A simple and interactive **To-Do List** web application built using **HTML**, **
 ---
 ## 📂 Folder Structure
 TO_DO_LIST/
--├── index.html
--├── style.css
--├── script.js
--└── README.md
+- ├── index.html
+- ├── style.css
+- ├── script.js
+- └── README.md
 
 ---
 ## ⚙️ Functionality Details
